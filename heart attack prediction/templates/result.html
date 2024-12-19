@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <p>The predicted death event is: {{ prediction }}</p>
+    {% if prediction == 0 %}
+    <p>The Heart of the person is Healthy</p>
+    {% else %}
+    <p>The person is in Risk</p>
+    {% endif %}
+    <a href="/">Back to Home</a>
+</body>
+</html>
